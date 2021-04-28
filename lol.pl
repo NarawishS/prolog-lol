@@ -29,7 +29,7 @@ champion(ezreal).
 champion(fiddlesticks).
 champion(fiora).
 champion(fizz).
-champion(falio).
+champion(galio).
 champion(gangplank).
 champion(garen).
 champion(gnar).
@@ -142,7 +142,7 @@ champion(wukong).
 champion(xayah).
 champion(xerath).
 champion(xin_zhao).
-champion(yusho).
+champion(yasuo).
 champion(yone).
 champion(yorick).
 champion(yuumi).
@@ -197,6 +197,159 @@ has_playstyle(tristana, lane_bully).
 has_playstyle(udyr, snowballer).
 
 has_class(aatrox, fighter).
+has_class(ahri, mage).
+has_class(akali, slayer).
+has_class(alistar, tank).
+has_class(amumu, tank).
+has_class(anivia, mage).
+has_class(annie, mage).
+has_class(aphelios, marksman).
+has_class(ashe, marksman).
+has_class(aurelion_sol, mage).
+has_class(azir, mage).
+has_class(bard, controller).
+has_class(blitzcrank, controller).
+has_class(brand, mage).
+has_class(braum, tank).
+has_class(caitlyn, marksman).
+has_class(camille, fighter).
+has_class(cassiopeia, mage).
+has_class(cho_gath, tank).
+has_class(corki, marksman).
+has_class(darius, fighter).
+has_class(diana, slayer).
+has_class(dr_mundo, tank).
+has_class(draven, marksman).
+has_class(ekko, slayer).
+has_class(elise, slayer).
+has_class(evelynn, slayer).
+has_class(ezreal, marksman).
+has_class(fiddlesticks, slayer).
+has_class(fiora, fighter).
+has_class(fizz, slayer).
+has_class(galio, controller).
+has_class(gangplank, fighter).
+has_class(garen, fighter).
+has_class(gnar, fighter).
+has_class(gragas, mage).
+has_class(graves, marksman).
+has_class(gwen, fighter).
+has_class(hecarim, fighter).
+has_class(heimerdinger, mage).
+has_class(illaoi, fighter).
+has_class(irelia, fighter).
+has_class(ivern, controller).
+has_class(janna, controller).
+has_class(jarvan, fighter).
+has_class(jax, fighter).
+has_class(jayce, fighter).
+has_class(jhin, marksman).
+has_class(jinx, marksman).
+has_class(kai_sa, marksman).
+has_class(kalista, marksman).
+has_class(karma, controller).
+has_class(karthus, mage).
+has_class(kassadin, slayer).
+has_class(katarina, slayer).
+has_class(kayle, marksman).
+has_class(kayn, slayer).
+has_class(kennen, mage).
+has_class(kha_zix, slayer).
+has_class(kindred, marksman).
+has_class(kled, fighter).
+has_class(kog_maw, marksman).
+has_class(leblanc, slayer).
+has_class(lee_sin, fighter).
+has_class(leona, controller).
+has_class(lillia, mage).
+has_class(lissandra, mage).
+has_class(lucian, marksman).
+has_class(lulu, controller).
+has_class(lux, mage).
+has_class(malphite, tank).
+has_class(maokai, tank).
+has_class(master_yi, fighter).
+has_class(miss_fortune, marksman).
+has_class(mordekaiser, fighter).
+has_class(morgana, controller).
+has_class(nami, controller).
+has_class(nasus, fighter).
+has_class(nautilus, controller).
+has_class(neeko, mage).
+has_class(nidalee, slayer).
+has_class(nocturne, slayer).
+has_class(nunu, tank).
+has_class(olaf, fighter).
+has_class(orianna, mage).
+has_class(ornn, tank).
+has_class(pantheon, fighter).
+has_class(poppy, fighter).
+has_class(pyke, controller).
+has_class(qiyana, slayer).
+has_class(quinn, marksman).
+has_class(rakan, controller).
+has_class(rammus, tank).
+has_class(rek_sai, fighter).
+has_class(rell, tank).
+has_class(renekton, fighter).
+has_class(rengar, slayer).
+has_class(riven, fighter).
+has_class(rumble, fighter).
+has_class(ryze, mage).
+has_class(samira, marksman).
+has_class(sejuani, tank).
+has_class(senna, marksman).
+has_class(seraphine, controller).
+has_class(sett, fighter).
+has_class(shaco, slayer).
+has_class(shen, fighter).
+has_class(shyvana, fighter).
+has_class(singed, tank).
+has_class(sion, tank).
+has_class(sivir, marksman).
+has_class(skarner, controller).
+has_class(sona, controller).
+has_class(soraka, controller).
+has_class(swain, mage).
+has_class(sylas, mage).
+has_class(syndra, mage).
+has_class(tahm_kench, tank).
+has_class(taliyah, mage).
+has_class(talon, slayer).
+has_class(taric, controller).
+has_class(teemo, mage).
+has_class(thresh, controller).
+has_class(tristana, marksman).
+has_class(trundle, fighter).
+has_class(tryndamere, fighter).
+has_class(twisted_fate, mage).
+has_class(twitch, marksman).
+has_class(udyr, fighter).
+has_class(urgot, fighter).
+has_class(varus, marksman).
+has_class(vayne, marksman).
+has_class(veigar, mage).
+has_class(vel_koz, mage).
+has_class(vi, fighter).
+has_class(viego, fighter).
+has_class(viktor, mage).
+has_class(vladimir, mage).
+has_class(volibear, fighter).
+has_class(warwick, fighter).
+has_class(wukong, fighter).
+has_class(xayah, marksman).
+has_class(xerath, mage).
+has_class(xin_zhao, fighter).
+has_class(yasuo, fighter).
+has_class(yone, fighter).
+has_class(yorick, fighter).
+has_class(yuumi, controller).
+has_class(zac, tank).
+has_class(zed, slayer).
+has_class(ziggs, mage).
+has_class(zilean, controller).
+has_class(zoe, mage).
+has_class(zyra, mage).
 
 %%% class_playstyle(controller, [tank, initiator, snowballer, control, roamer, engage]). %%%
 %%% class_playstyle(fighter, [tank, duelist, initiator, assassin, control, hyper_carry, lane_bully, engage, enchanter]). %%%
