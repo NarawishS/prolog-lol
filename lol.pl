@@ -351,16 +351,161 @@ has_class(zilean, controller).
 has_class(zoe, mage).
 has_class(zyra, mage).
 
-%%% class_playstyle(controller, [tank, initiator, snowballer, control, roamer, engage]). %%%
-%%% class_playstyle(fighter, [tank, duelist, initiator, assassin, control, hyper_carry, lane_bully, engage, enchanter]). %%%
-%%% class_playstyle(mage, [duelist, snowballer, assassin, roamer, hyper_carry, lane_bully]). %%%
-%%% class_playstyle(marksman, [hyper_carry, lane_bully, enchanter]). %%%
-%%% class_playstyle(slayer, [snowballer, assassin, roamer]). %%%
-%%% class_playstyle(tank, [tank, duelist, initiator, control, engage, enchanter]). %%%
-
 has_difficulty(aatrox, 2).
+has_difficulty(ahri, 2).
 has_difficulty(akali, 2).
+has_difficulty(alistar, 2).
+has_difficulty(amumu, 1).
+has_difficulty(anivia, 3).
+has_difficulty(annie, 2).
+has_difficulty(aphelios, 3).
+has_difficulty(ashe, 2).
+has_difficulty(aurelion_sol, 2).
+has_difficulty(azir, 3).
+has_difficulty(bard, 3).
+has_difficulty(blitzcrank, 2).
+has_difficulty(brand, 2).
+has_difficulty(braum, 1).
+has_difficulty(caitlyn, 2).
+has_difficulty(camille, 2).
+has_difficulty(cassiopeia, 3).
+has_difficulty(cho_gath, 2).
+has_difficulty(corki, 2).
+has_difficulty(darius, 1).
+has_difficulty(diana, 2).
+has_difficulty(dr_mundo, 2).
+has_difficulty(draven, 3).
+has_difficulty(ekko, 3).
+has_difficulty(elise, 3).
+has_difficulty(evelynn, 3).
+has_difficulty(ezreal, 2).
+has_difficulty(fiddlesticks, 3).
+has_difficulty(fiora, 1).
+has_difficulty(fizz, 2).
+has_difficulty(galio, 2).
+has_difficulty(gangplank, 3).
+has_difficulty(garen, 2).
+has_difficulty(gnar, 3).
+has_difficulty(gragas, 2).
+has_difficulty(graves, 1).
+has_difficulty(gwen, 2).
+has_difficulty(hecarim, 2).
+has_difficulty(heimerdinger, 3).
+has_difficulty(illaoi, 2).
+has_difficulty(irelia, 2).
+has_difficulty(ivern, 2).
+has_difficulty(janna, 2).
+has_difficulty(jarvan, 2).
+has_difficulty(jax, 2).
+has_difficulty(jayce, 2).
+has_difficulty(jhin, 2).
+has_difficulty(jinx, 2).
+has_difficulty(kai_sa, 2).
+has_difficulty(kalista, 2).
+has_difficulty(karma, 2).
+has_difficulty(karthus, 2).
+has_difficulty(kassadin, 3).
+has_difficulty(katarina, 3).
+has_difficulty(kayle, 2).
+has_difficulty(kayn, 3).
+has_difficulty(kennen, 2).
+has_difficulty(kha_zix, 2).
+has_difficulty(kindred, 2).
+has_difficulty(kled, 2).
+has_difficulty(kog_maw, 2).
+has_difficulty(leblanc, 3).
+has_difficulty(lee_sin, 2).
+has_difficulty(leona, 2).
+has_difficulty(lillia, 3).
+has_difficulty(lissandra, 2).
+has_difficulty(lucian, 2).
+has_difficulty(lulu, 2).
+has_difficulty(lux, 2).
+has_difficulty(malphite, 1).
+has_difficulty(malzahar, 2).
+has_difficulty(maokai, 1).
+has_difficulty(master_yi, 2).
+has_difficulty(miss_fortune, 1).
+has_difficulty(mordekaiser, 2).
+has_difficulty(morgana, 1).
+has_difficulty(nami, 2).
+has_difficulty(nasus, 2).
+has_difficulty(nautilus, 2).
+has_difficulty(neeko, 2).
+has_difficulty(nidalee, 3).
+has_difficulty(nocturne, 2).
+has_difficulty(nunu, 2).
+has_difficulty(olaf, 1).
+has_difficulty(orianna, 2).
+has_difficulty(ornn, 2).
+has_difficulty(pantheon, 2).
+has_difficulty(poppy, 2).
+has_difficulty(pyke, 2).
+has_difficulty(qiyana, 3).
+has_difficulty(quinn, 2).
+has_difficulty(rakan, 2).
+has_difficulty(rammus, 2).
+has_difficulty(rek_sai, 1).
 has_difficulty(rell, 1).
+has_difficulty(renekton, 1).
+has_difficulty(rengar, 3).
+has_difficulty(riven, 3).
+has_difficulty(rumble, 3).
+has_difficulty(ryze, 2).
+has_difficulty(samira, 2).
+has_difficulty(sejuani, 2).
+has_difficulty(senna, 2).
+has_difficulty(seraphine, 1).
+has_difficulty(sett, 1).
+has_difficulty(shaco, 3).
+has_difficulty(shen, 2).
+has_difficulty(shyvana, 2).
+has_difficulty(singed, 2).
+has_difficulty(sion, 2).
+has_difficulty(sivir, 2).
+has_difficulty(skarner, 2).
+has_difficulty(sona, 2).
+has_difficulty(soraka, 1).
+has_difficulty(swain, 3).
+has_difficulty(sylas, 2).
+has_difficulty(syndra, 3).
+has_difficulty(tahm_kench, 2).
+has_difficulty(taliyah, 2).
+has_difficulty(talon, 2).
+has_difficulty(taric, 1).
+has_difficulty(teemo, 2).
+has_difficulty(thresh, 2).
+has_difficulty(tristana, 2).
+has_difficulty(trundle, 2).
+has_difficulty(tryndamere, 2).
+has_difficulty(twisted_fate, 3).
+has_difficulty(twitch, 2).
+has_difficulty(udyr, 2).
+has_difficulty(urgot, 3).
+has_difficulty(varus, 1).
+has_difficulty(vayne, 3).
+has_difficulty(veigar, 2).
+has_difficulty(vel_koz, 3).
+has_difficulty(vi, 2).
+has_difficulty(viego, 2).
+has_difficulty(viktor, 3).
+has_difficulty(vladimir, 2).
+has_difficulty(volibear, 1).
+has_difficulty(warwick, 1).
+has_difficulty(wukong, 1).
+has_difficulty(xayah, 2).
+has_difficulty(xerath, 3).
+has_difficulty(xin_zhao, 1).
+has_difficulty(yasuo, 3).
+has_difficulty(yone, 3).
+has_difficulty(yorick, 2).
+has_difficulty(yuumi, 1).
+has_difficulty(zac, 3).
+has_difficulty(zed, 3).
+has_difficulty(ziggs, 2).
+has_difficulty(zilean, 2).
+has_difficulty(zoe, 2).
+has_difficulty(zyra, 2).
 
 use_skill_cost(aatrox, no_cost).
 use_skill_cost(akali, energy).
@@ -390,52 +535,73 @@ meta(bottom, [vayne, seraphine, swain, jhin, miss_fortune, jinx, tristana, sivir
 meta(support, [bard, zilean, lulu, brand, blitzcrank, nami, leona, morgana]).
 
 
-champion_class(X,Y) :- 
-	champion(X), 
-    class(Y), 
-    has_playstyle(X,Z), 
-    class_playstyle(Y,A), 
-    member(Z,A).
+champion_class_style(X, Y, Z) :- 
+    champion(X),
+    class(Y),
+    playstyle(Z),
+    has_class(X,Y),
+    has_playstyle(X,Z).
 
-select_cost(X,Y) :- 
-    champion(X), 
+champion_cost_role(X, Y, Z) :-
+    champion(X),
     skill_cost(Y),
-    use_skill_cost(X,Y).
-
-select_class(X, Y) :- 
-    class(X), 
-    champion(Y), 
-    has_playstyle(Y,Z), 
-    class_playstyle(X,A), 
+    role(Z),
+    use_skill_cost(X,Y),
+    has_role(X,A),
     member(Z,A).
 
-compatible_champ(X,Y) :- 
-    champion(X), 
-    champion(Y), 
-    has_playstyle(X,A), 
-    has_playstyle(Y,B), 
-    compatible(A, C), 
+
+champion_class_role(X, Y, Z) :-
+    champion(X),
+    class(Y),
+    role(Z),
+    has_class(X,Y),
+    has_role(X,A),
+    member(Z,A).
+
+champion_style_role(X, Y, Z) :-
+    champion(X),
+    playstyle(Y),
+    role(Z),
+    has_playstyle(X,Y),
+    has_role(X,A),
+    member(Z,A).
+
+champion_specific(X,A,B,C,D) :-
+    champion(X),
+    class(A),
+    playstyle(B),
+    skill_cost(C),
+    role(D),
+    champion_class_style(X,A,B),
+    champion_cost_role(X,C,D).
+
+compatible_champ(X,Y) :-
+    champion(X),
+    champion(Y),
+    has_playstyle(X,A),
+    has_playstyle(Y,B),
+    compatible(A, C),
     member(B, C).
 
-beginner_select_class(X,Y) :- 
-    class(X), 
-    champion(Y), 
-    champion_class(Y,X), 
+beginner_select_class(X,Y) :-
+    class(X), champion(Y),
+    has_class(Y,X),
     has_difficulty(Y,1).
 
-beginner_select_style(X,Y) :- 
-    playstyle(X), 
-    champion(Y), 
-    has_playstyle(Y,X), 
+beginner_select_style(X,Y) :-
+    playstyle(X),
+    champion(Y),
+    has_playstyle(Y,X),
     has_difficulty(Y,1).
 
-solo_counter_pick(X,Y) :- 
-    champion(X), 
-    champion(Y), 
-    champion_class(X,A), 
-    champion_class(Y,B), 
+solo_counter_pick(X,Y) :-
+    champion(X),
+    champion(Y),
+    has_class(X,A),
+    has_class(Y,B),
     has_advantage(A, C),
-    member(B,C).
+    member(B, C).
 
 duo_counter_pick(X, Y) :-
     champion(X),
@@ -443,19 +609,29 @@ duo_counter_pick(X, Y) :-
     champion(A),
     solo_counter_pick(X,A).
 
-counter_same_role(X,Y) :- 
-    champion(X), 
-    champion(Y), 
-    solo_counter_pick(X,Y), 
-    has_role(X,A), 
-    has_role(Y,B), 
-    A==B.
+counter_same_role(X,Y) :-
+    champion(X),
+    champion(Y),
+    solo_counter_pick(X,Y),
+    has_role(X,A),
+    member(C,A),
+    has_role(Y,B),
+    member(D,B),
+    C==D.
 
-select_based_on_pick(X,Y,Z) :- 
-    champion(X), 
-    member(A, Y), 
-    champion(A), 
-    compatible_champ(X,A), 
-    member(B, Z), 
-    champion(B), 
+meta_by_style(X,Y) :-
+    role(X),
+    champion(Y),
+    has_role(Y, A),
+    member(X, A),
+    meta(X, B),
+    member(Y, B). 
+
+select_based_on_pick(X,Y,Z) :-
+    champion(X),
+    member(A, Y),
+    champion(A),
+    compatible_champ(X,A),
+    member(B, Z),
+    champion(B),
     solo_counter_pick(X,B).
