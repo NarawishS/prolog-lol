@@ -365,7 +365,7 @@ has_playstyle(corki, [hyper_carry, control, roamer]).
 has_playstyle(darius, [duelist, snowballer, lane_bully]).
 has_playstyle(diana, [assassin, roamer, snowballer]).
 has_playstyle(dr_mundo, [tank, roamer]).
-has_playstyle(draven, [duelist]).
+has_playstyle(draven, [lane_bully, duelist]).
 has_playstyle(ekko, [assassin, roamer]).
 has_playstyle(elise, [assassin, roamer]).
 has_playstyle(evelynn, [assassin, roamer]).
@@ -392,7 +392,7 @@ has_playstyle(jayce, [lane_bully]).
 has_playstyle(jhin, [hyper_carry, duelist]).
 has_playstyle(jinx, [hyper_carry]).
 has_playstyle(kai_sa, [hyper_carry]).
-has_playstyle(kalista, [hyper_carry]).
+has_playstyle(kalista, [lane_bully]).
 has_playstyle(karma, [enchanter, control]).
 has_playstyle(karthus, [control]).
 has_playstyle(kassadin, [assassin, roamer]).
@@ -966,7 +966,6 @@ use_skill_cost(zilean, mana).
 use_skill_cost(zoe, mana).
 use_skill_cost(zyra, mana).
 
-
 has_advantage(fighter, [slayer, tank]).
 has_advantage(mage, [fighter, marksman]).
 has_advantage(marksman, [fighter, tank]).
@@ -993,102 +992,105 @@ meta(support, [thresh, bard, zilean, lulu, blitzcrank, nami, leona, morgana, sor
 
 %%% Rules %%%
 
-champion_class_style(X, Y, Z) :- 
-    champion(X),
-    class(Y),
-    playstyle(Z),
-    has_class(X,Y),
-    has_playstyle(X,Z).
-
-champion_cost_role(X, Y, Z) :-
-    champion(X),
-    skill_cost(Y),
-    role(Z),
-    use_skill_cost(X,Y),
-    has_role(X,A),
+champion_class_style(X, Y, Z) :-
+    champion(X), 
+    class(Y), 
+    playstyle(Z), 
+    has_class(X,Y), 
+    has_playstyle(X,A), 
     member(Z,A).
 
-champion_class_role(X, Y, Z) :-
+champion_cost_role(X, Y, Z) :- 
     champion(X),
-    class(Y),
+    skill_cost(Y) ,
     role(Z),
-    has_class(X,Y),
-    has_role(X,A),
+    use_skill_cost(X,Y), 
+    has_role(X,A), 
     member(Z,A).
 
-champion_style_role(X, Y, Z) :-
-    champion(X),
-    playstyle(Y),
-    role(Z),
-    has_playstyle(X,Y),
-    has_role(X,A),
+champion_class_role(X, Y, Z) :- 
+    champion(X), 
+    class(Y), 
+    role(Z), 
+    has_class(X,Y), 
+    has_role(X,A), 
     member(Z,A).
 
-champion_specific(X,A,B,C,D) :-
-    champion(X),
-    class(A),
-    playstyle(B),
-    skill_cost(C),
-    role(D),
-    champion_class_style(X,A,B),
+champion_style_role(X, Y, Z) :- 
+    champion(X), 
+    playstyle(Y), 
+    role(Z), 
+    has_playstyle(X,A), 
+    member(Y,A),
+    has_role(X,B), 
+    member(Z,B).
+
+champion_specific(X,A,B,C,D) :- 
+    champion(X), 
+    class(A), 
+    playstyle(B), 
+    skill_cost(C), 
+    role(D), 
+    champion_class_style(X,A,B), 
     champion_cost_role(X,C,D).
 
-compatible_champ(X,Y) :-
-    champion(X),
-    champion(Y),
-    has_playstyle(X,A),
-    has_playstyle(Y,B),
-    compatible(A, C),
-    member(B, C).
+compatible_champ(X,Y) :- 
+	champion(X), 
+	champion(Y),
+    X\=Y,
+	has_playstyle(X,A), 
+	member(V,A),
+	has_playstyle(Y,B), 
+	member(W,B),
+	compatible(V, C), 
+	member(W, C).
 
-beginner_select_class(X,Y) :-
-    class(X), champion(Y),
-    has_class(Y,X),
-    has_difficulty(Y,1).
+beginner_select_class(X,Y) :- 
+	champion(X), 
+	class(Y), 
+	has_class(X,Y), 
+	has_difficulty(X,1).
 
-beginner_select_style(X,Y) :-
-    playstyle(X),
-    champion(Y),
-    has_playstyle(Y,X),
-    has_difficulty(Y,1).
+beginner_select_style(X,Y) :- 
+	champion(X), 
+	playstyle(Y), 
+	has_playstyle(X,A),
+	member(Y,A), 
+	has_difficulty(X,1).
 
-solo_counter_pick(X,Y) :-
-    champion(X),
-    champion(Y),
-    has_class(X,A),
-    has_class(Y,B),
-    has_advantage(A, C),
-    member(B, C).
+solo_counter_pick(X,Y,R) :- 
+	champion(X), 
+	champion(Y),
+	role(R),
+	has_class(X,A), 
+	has_class(Y,B),
+	has_advantage(A, C), 
+	member(B, C),
+	has_role(X,D),
+	member(R,D).
 
-duo_counter_pick(X, Y) :-
-    champion(X),
-    member(A, Y),
-    champion(A),
-    solo_counter_pick(X,A).
+duo_counter_pick(X,Y) :- 
+    champion(X), 
+    member(A, Y), 
+    champion(A), 
+    (solo_counter_pick(X,A,bottom) ; solo_counter_pick(X,A,support)).
 
-counter_same_role(X,Y) :-
-    champion(X),
-    champion(Y),
-    solo_counter_pick(X,Y),
-    has_role(X,A),
-    member(C,A),
-    has_role(Y,B),
-    member(D,B),
-    C==D.
+meta_by_role(X,Y) :- 
+	champion(X), 
+	role(Y), 
+	has_role(X, A), 
+	member(Y, A), 
+	meta(Y, B), 
+	member(X, B).
 
-meta_by_style(X,Y) :-
-    role(X),
-    champion(Y),
-    has_role(Y, A),
-    member(X, A),
-    meta(X, B),
-    member(Y, B). 
+select_based_on_pick(X,R,Y,Z) :- 
+    champion(X), 
+    role(R),
+    member(A, Y), 
+    champion(A), 
+    compatible_champ(X,A), 
+    member(B, Z), champion(B), 
+    solo_counter_pick(X,B,R).
 
-select_based_on_pick(X,Y,Z) :-
-    champion(X),
-    member(A, Y),
-    champion(A),
-    compatible_champ(X,A),
-    member(B, Z),
-    champion(B),
-    solo_counter_pick(X,B).
+select_based_on_pick_ver2(X,R,Y,Z) :- 
+    setof(X, select_based_on_pick(X,R,Y,Z), X).
