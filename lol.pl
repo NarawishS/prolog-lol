@@ -860,7 +860,6 @@ champion_cost_role(X, Y, Z) :-
     has_role(X,A),
     member(Z,A).
 
-
 champion_class_role(X, Y, Z) :-
     champion(X),
     class(Y),
