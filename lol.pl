@@ -69,6 +69,7 @@ champion(lucian).
 champion(lulu).
 champion(lux).
 champion(malphite).
+champion(malzahar).
 champion(maokai).
 champion(master_yi).
 champion(miss_fortune).
@@ -185,16 +186,162 @@ skill_cost(health).
 
 has_role(aatrox, [top]).
 
-has_playstyle(aatrox, snowballer).
-has_playstyle(akali, assassin).
-has_playstyle(alistar, tank).
-has_playstyle(ezreal, lane_bully).
-has_playstyle(hecarim, snowballer).
-has_playstyle(rell, initiator).
-has_playstyle(sion, initiator).
-has_playstyle(sylas, duelist).
-has_playstyle(tristana, lane_bully).
-has_playstyle(udyr, snowballer).
+
+has_playstyle(aatrox, [snowballer, duelist]).
+has_playstyle(ahri, [control, lane_bully]).
+has_playstyle(akali, [assassin, duelist]).
+has_playstyle(alistar, [tank, initiator, engage]).
+has_playstyle(amumu, [tank, initiator]).
+has_playstyle(anivia, [control]).
+has_playstyle(annie, [control]).
+has_playstyle(aphelios, [hyper_carry]).
+has_playstyle(ashe, [hyper_carry, control]).
+has_playstyle(aurelion_sol, [control, roamer]).
+has_playstyle(azir, [control]).
+has_playstyle(bard, [roamer, enchanter]).
+has_playstyle(blitzcrank, [control, tank]).
+has_playstyle(brand, [control, lane_bully]).
+has_playstyle(braum, [tank, engage]).
+has_playstyle(caitlyn, [lane_bully]).
+has_playstyle(camille, [duelist, snowballer]).
+has_playstyle(cassiopeia, [control]).
+has_playstyle(cho_gath, [tank, control]).
+has_playstyle(corki, [hyper_carry, engage]).
+has_playstyle(darius, [duelist, snowballer, lane_bully]).
+has_playstyle(diana, [assassin, roamer]).
+has_playstyle(dr_mundo, [tank, roamer]).
+has_playstyle(draven, [duelist]).
+has_playstyle(ekko, [assassin, roamer]).
+has_playstyle(elise, [assassin, roamer]).
+has_playstyle(evelynn, [assassin, roamer]).
+has_playstyle(ezreal, [lane_bully]).
+has_playstyle(fiddlesticks, [roamer, initiator]).
+has_playstyle(fiora, [duelist, snowballer]).
+has_playstyle(fizz, [assassin, roamer]).
+has_playstyle(galio, [tank, roamer, control]).
+has_playstyle(gangplank, [lane_bully, engage]).
+has_playstyle(garen, [tank, duelist]).
+has_playstyle(gnar, [initiator, tank, lane_bully]).
+has_playstyle(gragas, [roamer, initiator, engage]).
+has_playstyle(graves, [duelist, snowballer, roamer]).
+has_playstyle(gwen, [duelist]).
+has_playstyle(hecarim, [snowballer, initiator, engage]).
+has_playstyle(heimerdinger, [control]).
+has_playstyle(illaoi, [duelist, tank]).
+has_playstyle(irelia, [duelist, snowballer]).
+has_playstyle(ivern, [enchanter, roamer]).
+has_playstyle(janna, [enchanter, control]).
+has_playstyle(jarvan, [initiator, engage, roamer]).
+has_playstyle(jax, [duelist, roamer]).
+has_playstyle(jayce, [lane_bully]).
+has_playstyle(jhin, [hyper_carry, duelist]).
+has_playstyle(jinx, [hyper_carry]).
+has_playstyle(kai_sa, [hyper_carry]).
+has_playstyle(kalista, [hyper_carry]).
+has_playstyle(karma, [enchanter, control]).
+has_playstyle(karthus, [control]).
+has_playstyle(kassadin, [assassin, roamer]).
+has_playstyle(katarina, [assassin, roamer]).
+has_playstyle(kayle, [hyper_carry]).
+has_playstyle(kayn, [assassin, roamer, duelist]).
+has_playstyle(kennen, [initiator, engage, control]).
+has_playstyle(kha_zix, [assassin, roamer]).
+has_playstyle(kindred, [hyper_carry, roamer]).
+has_playstyle(kled, [engage, initiator, duelist, snowballer]).
+has_playstyle(kog_maw, [hyper_carry]).
+has_playstyle(leblanc, [assassin]).
+has_playstyle(lee_sin, [duelist, roamer, engage]).
+has_playstyle(leona, [control, initiator, engage, tank]).
+has_playstyle(lillia, [roamer, initiator, engage]).
+has_playstyle(lissandra, [control]).
+has_playstyle(lucian, [hyper_carry, duelist]).
+has_playstyle(lulu, [enchanter, control]).
+has_playstyle(lux, [control]).
+has_playstyle(malphite, [tank, initiator]).
+has_playstyle(malzahar, [control]).
+has_playstyle(maokai, [tank, initiator, engage]).
+has_playstyle(master_yi, [duelist, roamer, snowballer]).
+has_playstyle(miss_fortune, [lane_bully]).
+has_playstyle(mordekaiser, [duelist, snowballer]).
+has_playstyle(morgana, [control, enchanter]).
+has_playstyle(nami, [control, enchanter]).
+has_playstyle(nasus, [duelist, tank, snowballer]).
+has_playstyle(nautilus, [tank, initiator, engage]).
+has_playstyle(neeko, [control, initiator]).
+has_playstyle(nidalee, [roamer, assassin]).
+has_playstyle(nocturne, [duelist, assassin, roamer, initiator]).
+has_playstyle(nunu, [initiator, roamer, engage, tank]).
+has_playstyle(olaf, [duelist, roamer]).
+has_playstyle(orianna, [control, lane_bully]).
+has_playstyle(ornn, [tank, initiator, engage]).
+has_playstyle(pantheon, [initiator, duelist, roamer]).
+has_playstyle(poppy, [tank, duelist, roamer]).
+has_playstyle(pyke, [roamer, engage, control, assassin]).
+has_playstyle(qiyana, [assassin, roamer, duelist]).
+has_playstyle(quinn, [roamer, lane_bully]).
+has_playstyle(rakan, [engage, control, initiator, enchanter]).
+has_playstyle(rammus, [tank, initiator, roamer]).
+has_playstyle(rek_sai, [duelist, roamer]).
+has_playstyle(rell, initiator[tank, initiator]).
+has_playstyle(renekton, [duelist, snowballer, lane_bully]).
+has_playstyle(rengar, [roamer, assassin]).
+has_playstyle(riven, [duelist]).
+has_playstyle(rumble, [lane_bully, control]).
+has_playstyle(ryze, [control, hyper_carry]).
+has_playstyle(samira, [duelist]).
+has_playstyle(sejuani, [tank, initiator, roamer]).
+has_playstyle(senna, [lane_bully, hyper_carry, enchanter]).
+has_playstyle(seraphine, [enchanter, control]).
+has_playstyle(sett, [duelist, snowballer]).
+has_playstyle(shaco, [assassin, roamer]).
+has_playstyle(shen, [tank, enchanter, roamer]).
+has_playstyle(shyvana, [roamer, initiator]).
+has_playstyle(singed, [tank, control]).
+has_playstyle(sion, initiator[initiator, tank, control]).
+has_playstyle(sivir, [engage, lane_bully]).
+has_playstyle(skarner, [roamer, control]).
+has_playstyle(sona, [enchanter]).
+has_playstyle(soraka, [enchanter]).
+has_playstyle(swain, [control, lane_bully]).
+has_playstyle(sylas, [duelist]).
+has_playstyle(syndra, [control]).
+has_playstyle(tahm_kench, [tank]).
+has_playstyle(taliyah, [control, lane_bully, engage]).
+has_playstyle(talon, [assassin, roamer, duelist]).
+has_playstyle(taric, [tank, enchanter]).
+has_playstyle(teemo, [control]).
+has_playstyle(thresh, [control, tank, engage, initiator]).
+has_playstyle(tristana, [lane_bully]).
+has_playstyle(trundle, [duelist, roamer, snowballer, engage]).
+has_playstyle(tryndamere, [duelist, snowballer, engage]).
+has_playstyle(twisted_fate, [control, roamer, engage]).
+has_playstyle(twitch, [hyper_carry, roamer]).
+has_playstyle(udyr, [snowballer, duelist, roamer]).
+has_playstyle(urgot, [engage, duelist, tank, snowballer]).
+has_playstyle(varus, [lane_bully, control]).
+has_playstyle(vayne, [hyper_carry, duelist]).
+has_playstyle(veigar, [control]).
+has_playstyle(vel_koz, [control]).
+has_playstyle(vi, [duelist, roamer, initiator]).
+has_playstyle(viego, [duelist, roamer, initiator]).
+has_playstyle(viktor, [control]).
+has_playstyle(vladimir, [snowballer, lane_bully, control]).
+has_playstyle(volibear, [tank, duelist, initiator, roamer, snowballer]).
+has_playstyle(warwick, [initiator, tank, duelist, roamer]).
+has_playstyle(wukong, [duelist, initiator, roamer, snowballer]).
+has_playstyle(xayah, [duelist]).
+has_playstyle(xerath, [control, lane_bully]).
+has_playstyle(xin_zhao, [duelist, roamer]).
+has_playstyle(yasuo, [duelist]).
+has_playstyle(yone, [duelist, initiator, assassin]).
+has_playstyle(yorick, [duelist, lane_bully]).
+has_playstyle(yuumi, [enchanter, control]).
+has_playstyle(zac, [control, roamer, initiator]).
+has_playstyle(zed, [assassin, duelist]).
+has_playstyle(ziggs, [control, lane_bully]).
+has_playstyle(zilean, [control, lane_bully]).
+has_playstyle(zoe, [control, lane_bully]).
+has_playstyle(zyra, [control, lane_bully]).
 
 has_class(aatrox, fighter).
 has_class(ahri, mage).
@@ -267,6 +414,7 @@ has_class(lucian, marksman).
 has_class(lulu, controller).
 has_class(lux, mage).
 has_class(malphite, tank).
+has_class(malzahar, mage).
 has_class(maokai, tank).
 has_class(master_yi, fighter).
 has_class(miss_fortune, marksman).
