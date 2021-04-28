@@ -69,6 +69,7 @@ champion(lucian).
 champion(lulu).
 champion(lux).
 champion(malphite).
+champion(malzahar).
 champion(maokai).
 champion(master_yi).
 champion(miss_fortune).
@@ -184,6 +185,160 @@ skill_cost(no_cost).
 skill_cost(health).
 
 has_role(aatrox, [top]).
+has_role(ahri, [mid]).
+has_role(akali, [top, mid]).
+has_role(alistar, [support]).
+has_role(amumu, [jungle]).
+has_role(anivia, [mid]).
+has_role(annie, [mid, support]).
+has_role(aphelios, [bottom]).
+has_role(ashe, [bottom]).
+has_role(aurelion_sol, [mid]).
+has_role(azir, [mid]).
+has_role(bard, [support]).
+has_role(blitzcrank, [support]).
+has_role(brand, [mid, support]).
+has_role(braum, [support]).
+has_role(caitlyn, [bottom]).
+has_role(camille, [top]).
+has_role(cassiopeia, [mid]).
+has_role(cho_gath, [top]).
+has_role(corki, [mid]).
+has_role(darius, [top]).
+has_role(diana, [jungle, mid]).
+has_role(dr_mundo, [top, jungle]).
+has_role(draven, [bottom]).
+has_role(ekko, [jungle, mid]).
+has_role(elise, [jungle]).
+has_role(evelynn, [jungle]).
+has_role(ezreal, [bottom]).
+has_role(fiddlesticks, [jungle]).
+has_role(fiora, [top]).
+has_role(fizz, [mid]).
+has_role(galio, [mid, support]).
+has_role(gangplank, [top]).
+has_role(garen, [top]).
+has_role(gnar, [top]).
+has_role(gragas, [top, jungle]).
+has_role(graves, [jungle]).
+has_role(gwen, [top, mid]).
+has_role(hecarim, [jungle]).
+has_role(heimerdinger, [mid, bottom]).
+has_role(illaoi, [top]).
+has_role(irelia, [top]).
+has_role(ivern, [jungle]).
+has_role(janna, [support]).
+has_role(jarvan, [jungle]).
+has_role(jax, [top, jungle]).
+has_role(jayce, [top]).
+has_role(jhin, [bottom]).
+has_role(jinx, [bottom]).
+has_role(kai_sa, [bottom]).
+has_role(kalista, [bottom]).
+has_role(karma, [support]).
+has_role(karthus, [jungle]).
+has_role(kassadin, [mid]).
+has_role(katarina, [mid]).
+has_role(kayle, [top]).
+has_role(kayn, [jungle]).
+has_role(kennen, [top]).
+has_role(kha_zix, [jungle]).
+has_role(kindred, [jungle]).
+has_role(kled, [top]).
+has_role(kog_maw, [bottom]).
+has_role(leblanc, [mid]).
+has_role(lee_sin, [top, jungle, mid]).
+has_role(leona, [support]).
+has_role(lillia, [jungle]).
+has_role(lissandra, [mid]).
+has_role(lucian, [mid, bottom]).
+has_role(lulu, [support]).
+has_role(lux, [mid, support]).
+has_role(malphite, [top, mid]).
+has_role(malzahar, [mid]).
+has_role(maokai, [top, support]).
+has_role(master_yi, [jungle]).
+has_role(miss_fortune, [bottom]).
+has_role(mordekaiser, [top]).
+has_role(morgana, [jungle, mid, support]).
+has_role(nami, [support]).
+has_role(nasus, [top]).
+has_role(nautilus, [support]).
+has_role(neeko, [mid, support]).
+has_role(nidalee, [jungle]).
+has_role(nocturne, [jungle]).
+has_role(nunu, [jungle]).
+has_role(olaf, [jungle]).
+has_role(orianna, [mid]).
+has_role(ornn, [top]).
+has_role(pantheon, [top, mid, support]).
+has_role(poppy, [top, jungle]).
+has_role(pyke, [support]).
+has_role(qiyana, [mid]).
+has_role(quinn, [top]).
+has_role(rakan, [support]).
+has_role(rammus, [jungle]).
+has_role(rek_sai, [jungle]).
+has_role(rell, [support]).
+has_role(renekton, [top]).
+has_role(rengar, [jungle]).
+has_role(riven, [top]).
+has_role(rumble, [top, mid]).
+has_role(ryze, [mid]).
+has_role(samira, [bottom]).
+has_role(sejuani, [jungle]).
+has_role(senna, [bottom, support]]).
+has_role(seraphine, [mid, bottom, support]).
+has_role(sett, [top, support]).
+has_role(shaco, [jungle, support]).
+has_role(shen, [top]).
+has_role(shyvana, [jungle]).
+has_role(singed, [top]).
+has_role(sion, [top]).
+has_role(sivir, [bottom]).
+has_role(skarner, [jungle]).
+has_role(sona, [support]).
+has_role(soraka, [support]).
+has_role(swain, [mid, bottom, support]).
+has_role(sylas, [mid]).
+has_role(syndra, [mid]).
+has_role(tahm_kench, [top]).
+has_role(taliyah, [jungle, mid]).
+has_role(talon, [mid]).
+has_role(taric, [support]).
+has_role(teemo, [top, mid]).
+has_role(thresh, [support]).
+has_role(tristana, [bottom]).
+has_role(trundle, [top, jungle]).
+has_role(tryndamere, [top]).
+has_role(twisted_fate, [mid]).
+has_role(twitch, [bottom]).
+has_role(udyr, [jungle]).
+has_role(urgot, [top]).
+has_role(varus, [bottom]).
+has_role(vayne, [top, bottom]).
+has_role(veigar, [mid, support]).
+has_role(vel_koz, [mid, support]).
+has_role(vi, [jungle]).
+has_role(viego, [top, jungle, mid]).
+has_role(viktor, [mid]).
+has_role(vladimir, [top, mid]).
+has_role(volibear, [top, jungle]).
+has_role(warwick, [top, jungle]).
+has_role(wukong, [top, jungle]).
+has_role(xayah, [bottom]).
+has_role(xerath, [mid, support]).
+has_role(xin_zhao, [top, jungle]).
+has_role(yasuo, [top, mid, bottom]).
+has_role(yone, [top, mid]).
+has_role(yorick, [top]).
+has_role(yuumi, [support]).
+has_role(zac, [jungle]).
+has_role(zed, [mid]).
+has_role(ziggs, [mid, bottom]).
+has_role(zilean, [support]).
+has_role(zoe, [mid]).
+has_role(zyra, [support]).
 
 has_playstyle(aatrox, snowballer).
 has_playstyle(akali, assassin).
@@ -267,6 +422,7 @@ has_class(lucian, marksman).
 has_class(lulu, controller).
 has_class(lux, mage).
 has_class(malphite, tank).
+has_class(malzahar, controller).
 has_class(maokai, tank).
 has_class(master_yi, fighter).
 has_class(miss_fortune, marksman).
@@ -528,11 +684,11 @@ compatible(lane_bully, [duelist, initiator, assassin, control, hyper_carry, enga
 compatible(engage, [tank, initiator, snowballer, assassin, roamer, lane_bully, enchanter]).
 compatible(enchanter, [tank, duelist, snowballer, control, hyper_carry, lane_bully, engage]).
 
-meta(top, [darius, urgot, wukong, cho_gath, malphite, nasus, garen, yorick]).
-meta(jungle, [shaco, elise, nocturne, udyr, skarner, hecarim, volibear, rammus, nunu]).
-meta(mid, [katarina, yasuo, anivia, ekko, fizz, ahri, malzahar, neeko, diana, annie]).
-meta(bottom, [vayne, seraphine, swain, jhin, miss_fortune, jinx, tristana, sivir]).
-meta(support, [bard, zilean, lulu, brand, blitzcrank, nami, leona, morgana]).
+meta(top, [kled, urgot, darius, shen, malphite, nasus, garen, dr_mundo, wukong, cho_gath]).
+meta(jungle, [shaco, elise, nocturne, udyr, nunu, volibear, diana, morgana]).
+meta(mid, [katarina, yasuo, zed, ekko, vladimir, anivia, fizz, ahri, diana, annie, malzahar, neeko]).
+meta(bottom, [vayne, seraphine, swain, jhin, miss_fortune, jinx, tristana, sivir, ashe]).
+meta(support, [thresh, bard, zilean, lulu, blitzcrank, nami, leona, morgana, soraka, brand]).
 
 
 champion_class_style(X, Y, Z) :- 
