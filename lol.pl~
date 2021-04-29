@@ -289,7 +289,7 @@ has_role(rumble, [top, mid]).
 has_role(ryze, [mid]).
 has_role(samira, [bottom]).
 has_role(sejuani, [jungle]).
-has_role(senna, [bottom, support]).
+has_role(senna, [bottom, support]]).
 has_role(seraphine, [mid, bottom, support]).
 has_role(sett, [top, support]).
 has_role(shaco, [jungle, support]).
@@ -917,7 +917,7 @@ use_skill_cost(senna, mana).
 use_skill_cost(seraphine, mana).
 use_skill_cost(sett, no_cost).
 use_skill_cost(shaco, mana).
-use_skill_cost(shen, energy).
+use_skill_cost(shen, no_cost).
 use_skill_cost(shyvana, no_cost).
 use_skill_cost(singed, mana).
 use_skill_cost(sion, mana).
@@ -948,7 +948,7 @@ use_skill_cost(vel_koz, mana).
 use_skill_cost(vi, mana).
 use_skill_cost(viego, no_cost).
 use_skill_cost(viktor, mana).
-use_skill_cost(vladimir, health).
+use_skill_cost(vladimir, no_cost).
 use_skill_cost(volibear, mana).
 use_skill_cost(warwick, mana).
 use_skill_cost(wukong, mana).
@@ -959,7 +959,7 @@ use_skill_cost(yasuo, no_cost).
 use_skill_cost(yone, no_cost).
 use_skill_cost(yorick, mana).
 use_skill_cost(yuumi, mana).
-use_skill_cost(zac, health).
+use_skill_cost(zac, no_cost).
 use_skill_cost(zed, energy).
 use_skill_cost(ziggs, mana).
 use_skill_cost(zilean, mana).
@@ -1073,7 +1073,7 @@ duo_counter_pick(X,Y) :-
     champion(X), 
     member(A, Y), 
     champion(A), 
-    ( solo_counter_pick(X,A,bottom) ; solo_counter_pick(X,A,support) ).
+    (solo_counter_pick(X,A,bottom) ; solo_counter_pick(X,A,support)).
 
 meta_by_role(X,Y) :- 
 	champion(X), 
@@ -1089,24 +1089,8 @@ select_based_on_pick(X,R,Y,Z) :-
     member(A, Y), 
     champion(A), 
     compatible_champ(X,A), 
-    member(B, Z), champion(B),
+    member(B, Z), champion(B), 
     solo_counter_pick(X,B,R).
 
-set_of_recommend_champion(X,R,Y,Z) :- 
+select_based_on_pick_ver2(X,R,Y,Z) :- 
     setof(X, select_based_on_pick(X,R,Y,Z), X).
-
-list_of_recommend_champion(X,R,Y,Z) :- 
-    bagof(X, select_based_on_pick(X,R,Y,Z), X).
-
-element_count(X,N,L) :-
-    aggregate(count,member(X,L),N).
-
-max_element_count2(X,N,L) :-
-    aggregate(max(N1),X1,element_count(X1,N1,L),N),
-    member(X,L),
-    element_count(X,N,L),
-    !.
-
-recommend_champion(A,X,R,Y,Z) :-
-    list_of_recommend_champion(X,R,Y,Z),
-    max_element_count2(A,_,X).
