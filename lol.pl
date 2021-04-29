@@ -342,7 +342,7 @@ has_role(zilean, [support]).
 has_role(zoe, [mid]).
 has_role(zyra, [support]).
 
-has_playstyle(aatrox, [snowballer, duelist]).
+has_playstyle(aatrox, [duelist]).
 has_playstyle(ahri, [control, lane_bully]).
 has_playstyle(akali, [assassin, duelist]).
 has_playstyle(alistar, [tank, initiator]).
